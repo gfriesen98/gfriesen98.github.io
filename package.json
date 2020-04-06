@@ -1,0 +1,14 @@
+{
+  "name": "gfriesen98.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gfriesen98/gfriesen98.github.io.git",
+  "author": "Garett Friesen <garettf999@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "scss": "node-sass --watch styles/colors.scss -o styles/css"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
