@@ -30,6 +30,15 @@ img{
   margin-top: 0;
 }
 
+.greeting-block{
+  background-color: $color5;
+  display: inline-block;
+  border: 0px solid $cursor;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
+}
+
 a{
   color: $color1;
   text-decoration: none;
