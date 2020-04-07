@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "gohufont";
+  src: url("fonts/gohufont-14.ttf");
+}
 body {
   background-color: #0A181E;
   color: #c5c2c8;

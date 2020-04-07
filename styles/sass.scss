@@ -1,5 +1,10 @@
 @import 'colors';
 
+@font-face{
+  font-family: 'gohufont';
+  src: url('fonts/gohufont-14.ttf');
+}
+
 body{
   background-color: $background;
   color: $foreground;
