@@ -1,12 +1,24 @@
 @font-face {
   font-family: "gohufont";
-  src: url("https://github.com/koemaeda/gohufont-ttf/blob/master/gohufont-14.ttf");
+  src: url("fonts/gohufont-14.ttf");
 }
-body {
-  font-family: "gohufont";
-  font-size: 14px;
+html {
   background-color: #0A181E;
   color: #c5c2c8;
+}
+
+button {
+  background-color: none;
+  color: none;
+}
+
+a {
+  text-decoration: none;
+  color: #c5c2c8;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
