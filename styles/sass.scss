@@ -2,12 +2,12 @@
 
 @font-face{
   font-family: 'gohufont';
-  src: url('fonts/gohufont-14.ttf') format('ttf');
+  src: url('https://github.com/koemaeda/gohufont-ttf/blob/master/gohufont-14.ttf');
 }
 
 body{
-  font-family: gohufont;
-  font-size: 14pt;
+  font-family: 'gohufont';
+  font-size: 14px;
   background-color: $background;
   color: $foreground;
 }
