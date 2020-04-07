@@ -3,6 +3,7 @@
   src: url("fonts/gohufont-14.ttf");
 }
 body {
+  font-family: "gohufont";
   background-color: #0A181E;
   color: #c5c2c8;
 }
