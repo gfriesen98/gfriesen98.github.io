@@ -25,15 +25,6 @@ img {
   margin-top: 0;
 }
 
-.greeting-block {
-  background-color: #8C757E;
-  display: inline-block;
-  border: 0px solid #c5c2c8;
-  padding: 30px;
-  margin-bottom: 20%;
-  text-align: left;
-}
-
 a {
   color: #244C63;
   text-decoration: none;
