@@ -3,22 +3,58 @@
   src: url("fonts/gohufont-14.ttf");
 }
 html {
-  background-color: #0A181E;
-  color: #c5c2c8;
+  background-color: #14110d;
+  color: #dad1c9;
 }
 
-button {
-  background-color: none;
-  color: none;
+body {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 5%;
+}
+
+img {
+  width: 250px;
+  background-color: #867F80;
+  display: inline-block;
+  border: 0px solid #dad1c9;
+  padding: 30px;
+  margin-bottom: 2%;
+  margin-top: 0;
 }
 
 a {
+  color: #8B3E32;
   text-decoration: none;
-  color: #c5c2c8;
 }
 
-ul {
-  list-style-type: none;
+.container-res {
+  background-color: #867F80;
+  display: inline-block;
+  border: 0px solid #dad1c9;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
+}
+
+.container-soc {
+  background-color: #867F80;
+  display: inline-block;
+  border: 0px solid #dad1c9;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
+}
+
+.container-other {
+  background-color: #867F80;
+  display: inline-block;
+  border: 0px solid #dad1c9;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

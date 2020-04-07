@@ -5,48 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
+
   <title>Document</title>
 </head>
 <body>
 
-  <div class="container">
-    <div id="window">
-      <p id="time">7:32pm</p>
-      <p id="date">apr.6.2020</p>
-      <div class="left-side">
-        <form id="form" action="https://google.com/search?" method="get">
-          <div class="form-group">
-            <input type="text" class="form-control" name="q" require="" placeholder="search">
-          </div>
-          <img style="width: 250px; float: center; right: 32%;  top:-30px; position: absolute;" src="">
-          <div id="links">
+  <h3>hello</h3>
 
-            <ul>
-              <li>
-                <a href="https://www.twitter.com">twitter</a>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <a href="https://github.com/gfriesen98">github</a>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <a href="https://forum.snahp.it">snahp.it</a>
-              </li>
-            </ul>
-
-          </div>
-        </form>
-      </div>
-      <div id="image-pane">
-        <img src="img" alt="imgpane">
-      </div>
-    </div>
+  <div id="time-block">
+    <p id="time"></p>
+    <p id="date"></p>
   </div>
-  
+
+  <div class="imagebox">
+    <img src="darknight_crop.jpg" alt="cropped">
+  </div>
+
+  <div class="container-res">
+    <p>
+      <a href="https://forum.snahp.it">snahp.it - </a>
+      <a href="https://board.4chan.org/w/.">papes - </a>
+      <a href="https://www.reddit.com/r/unixporn">rice_inspo</a>
+    </p>
+  </div>
+
+  <div class="container-soc">
+    <p>
+      <a href="https://twitter.com">twitter - </a>
+      <a href="https://facebook.com">facebook - </a>
+      <a href="https://youtube.com">youtube</a>
+    </p>
+  </div>
+
+  <div class="container-other">
+    <p>
+      <a href="https://github.com/gfriesen98">github - </a>
+      <a href="https://material-ui.com/components/material-icons/">material - </a>
+      <a href="https://wiki.archlinux.com">arch_wiki</a>
+    </p>
+  </div>
+
+  <script src="js/timedate.js"></script>
 </body>
 </html>

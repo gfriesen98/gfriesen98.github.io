@@ -12,16 +12,52 @@ html{
   color: $foreground;
 }
 
-button{
-  background-color: none;
-  color: none;
+body{
+  text-align: center;
+}
+
+h3{
+  margin-top: 5%;
+}
+
+img{
+  width: 250px;
+  background-color: $color5;
+  display: inline-block;
+  border: 0px solid $cursor;
+  padding: 30px;
+  margin-bottom: 2%;
+  margin-top: 0;
 }
 
 a{
+  color: $color1;
   text-decoration: none;
-  color: $foreground;
 }
 
-ul{
-  list-style-type: none;
+.container-res{
+  background-color: $color5;
+  display: inline-block;
+  border: 0px solid $cursor;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
+}
+
+.container-soc{
+  background-color: $color5;
+  display: inline-block;
+  border: 0px solid $cursor;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
+}
+
+.container-other{
+  background-color: $color5;
+  display: inline-block;
+  border: 0px solid $cursor;
+  padding: 30px;
+  margin-bottom: 20%;
+  text-align: left;
 }
