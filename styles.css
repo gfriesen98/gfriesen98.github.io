@@ -1,6 +1,6 @@
 @font-face {
   font-family: "gohufont";
-  src: url("fonts/gohufont-14.ttf");
+  src: url("fonts/gohufont-14.ttf") format("ttf");
 }
 body {
   font-family: gohufont;
