@@ -1,8 +1,11 @@
 @import 'colors';
 
-@font-face{
-  font-family: 'gohufont';
-  src: url('fonts/gohufont-14.ttf');
+@font-face {
+  font-family: 'gohufont14';
+  src: url('gohufont-14-webfont.woff2') format('woff2'),
+       url('gohufont-14-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html{
@@ -47,6 +50,8 @@ img{
 a{
   color: $color1;
   text-decoration: none;
+  font-family: 'gohufont14';
+  font-size: 14px;
 }
 
 .container-res{
