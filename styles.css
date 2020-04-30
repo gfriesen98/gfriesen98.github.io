@@ -5,12 +5,12 @@
   font-style: normal;
 }
 html {
-  background-color: #0f0f1c;
-  color: #d0cbbf;
+  background-color: #0e0d1c;
+  color: #cbbfbc;
 }
 
 p {
-  color: #d0cbbf;
+  color: #cbbfbc;
 }
 
 body {
@@ -23,41 +23,41 @@ h3 {
 
 img {
   width: 250px;
-  background-color: #A59A8D;
+  background-color: #633F93;
   display: inline-block;
-  border: 0px solid #d0cbbf;
+  border: 0px solid #cbbfbc;
   padding: 30px;
   margin-bottom: 2%;
   margin-top: 0;
 }
 
 a {
-  color: #AA9E70;
+  color: #AC8D72;
   text-decoration: none;
   font-family: "gohufont14";
   font-size: 14px;
 }
 
 .container-res {
-  background-color: #A59A8D;
+  background-color: #633F93;
   display: inline-block;
-  border: 0px solid #d0cbbf;
+  border: 0px solid #cbbfbc;
   padding: 30px;
   text-align: left;
 }
 
 .container-soc {
-  background-color: #A59A8D;
+  background-color: #633F93;
   display: inline-block;
-  border: 0px solid #d0cbbf;
+  border: 0px solid #cbbfbc;
   padding: 30px;
   text-align: left;
 }
 
 .container-other {
-  background-color: #A59A8D;
+  background-color: #633F93;
   display: inline-block;
-  border: 0px solid #d0cbbf;
+  border: 0px solid #cbbfbc;
   padding: 30px;
   text-align: left;
 }
