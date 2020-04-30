@@ -1,11 +1,29 @@
 function getDateTime(){
   let time,today,doweek,date,currentHour,timeElement,dataElement,dayElement;
-  let mS = ['january', 'febuary', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-  let dow = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+  let mS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+  let dow = ['mon', 'tues', 'wed', 'thur', 'fri', 'sat', 'sun'];
   let isam;
+  let greetings = [
+    "Mirë dita",
+    "مرحبا",
+    "Zdravo",
+    "Здравейте",
+    "Bonjour",
+    "Χαίρε",
+    "Aloha",
+    "שלום",
+    "こんにちは",
+    "안녕",
+    "你好",
+    "Cześć",
+    "Привет",
+    "Chào bạn"
+  ];
+
+  document.getElementById("hello-lang").innerHTML = greetings[Math.floor(Math.random()*greetings.length)];
 
   today = new Date();
-  date = mS[today.getMonth()]+' '+today.getDate() +' '+ today.getFullYear();
+  date = mS[today.getMonth()]+'.'+today.getDate() +'/'+ today.getFullYear();
   currentHour = today.getHours();
   doweek = dow[today.getDay()]
 
@@ -36,20 +54,16 @@ function setGreeting(){
   let aa = 'kHtR76KQbW8PQnhXcCPUkCvDZfOhk2u2HnuEB5AYIjdmJ';
   let key = 'IrBHrFg8CjIDHEo1bU4BY16BJ';
   let secret = 'URGlofTcMVy3R0WM91MzbfpnvTlBJNb399hLuB7Hwx9pGQi2if';
-
-  const client = require('twitter-lite');
-  const t = new client({
-    subdomain: "api", // "api" is the default (change for other subdomains)
-    version: "1.1", // version "1.1" is the default (change for other subdomains)
-    consumer_key: key, // from Twitter.
-    consumer_secret: secret, // from Twitter.
-    access_token_key: a, // from your User (oauth_token)
-    access_token_secret: aa // from your User (oauth_token_secret)
+  var Twit = require('twit')
+  var T = new Twit({
+    consumer_key: key,
+    consumer_secret: secret,
+    app_only_auth: true
   })
 
-  t.get("account/verify_credentials").then(res => {
-    console.log(res)
-  }).catch(console.error);
+  T.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function(err, data, response) {
+    console.log(data)
+  })
 
 }
 
@@ -64,7 +78,7 @@ function getWeather(){
     console.log(data);
     setWeather(data);
     getDateTime();
-    setGreeting();
+    // setGreeting();
   }).catch((error) => {
     console.log(error);
   })

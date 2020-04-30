@@ -32,9 +32,22 @@ img {
   margin-top: 0;
 }
 
-#test {
-  font-size: 14px;
-  font-family: "gohufont14";
+.form {
+  background-color: #0e0d1c;
+  color: #97718D;
+  border: none;
+  border-bottom: 2px solid #633F93;
+  width: 302px;
+  margin-bottom: 2%;
+}
+
+.form:focus {
+  background-color: #0e0d1c;
+  color: #97718D;
+  border: none;
+  border-bottom: 5px solid #633F93;
+  width: 302px;
+  margin-bottom: 2%;
 }
 
 a {
@@ -66,6 +79,28 @@ a {
   border: 0px solid #cbbfbc;
   padding: 30px;
   text-align: left;
+}
+
+.weatherdate {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #633F93;
+  padding: 30px;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.container-list {
+  margin-top: 2%;
+}
+.container-list button {
+  background-color: #633F93;
+  color: #AC8D72;
+  border: none;
+}
+
+#todo-list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

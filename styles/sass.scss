@@ -48,10 +48,22 @@ img{
 //   text-align: center;aaaa
 // }
 
-#test{
-  font-size: 14px;
-  font-family: 'gohufont14';
-  
+.form{
+  background-color: $color0;
+  color: $color6;;
+  border: none;
+  border-bottom: 2px solid $color5;
+  width: 302px;
+  margin-bottom: 2%;
+}
+
+.form:focus{
+  background-color: $color0;
+  color: $color6;;
+  border: none;
+  border-bottom: 5px solid $color5;
+  width: 302px;
+  margin-bottom: 2%;
 }
 
 a{
@@ -83,4 +95,26 @@ a{
   border: 0px solid $cursor;
   padding: 30px;
   text-align: left;
+}
+
+.weatherdate{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: $color5;
+  padding: 30px;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.container-list{
+  margin-top: 2%;;
+  button{
+    background-color: $color5;
+    color: $color3;
+    border: none;
+  }
+}
+
+#todo-list{
+  list-style: none;
 }

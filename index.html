@@ -13,19 +13,22 @@
   <!-- <h3 id="greeting"></h3> -->
 
   <div class="greeting-block">
-    <p id="time"></p>
-    <p id="curr"></p>
-    <p id="date"></p>
   </div>
 
-  <form action="http://google.com/search" target="_blank">
-    <input name="q" />
-    <input type="submit"/>
-  </form>
+  <div class="weatherdate">
+    <i id="hello-lang"></i>
+    <p id="time"></p>
+    <p id="date" style="display: inline;"></p>
+    <p id="curr" style="display: inline;"></p>
+  </div>
 
   <div class="imagebox">
     <img src="wall_edited_cropped.png" alt="cropped">
   </div>
+
+  <form action="http://google.com/search" target="_blank">
+    <input class="form" placeholder="search..." autofocus="true" name="q" />
+  </form>
 
   <div class="container-res">
     <p>
@@ -52,7 +55,58 @@
       <a href="https://kbdfans.com">kbdfans</a>
     </p>
   </div>
+  <br/>
 
-  <script src="js/bundle.js"></script>
+  <!-- <div class="container-list">
+    <input class="form" id="input-text" placeholder="add todo item"/>
+    <button onclick='addTodo()'>add</button>
+    <button onclick="remTodo()">remove</button>
+    <ul id="todo-list"">
+
+    </ul>
+  </div> -->
+
+  <script src="js/timedate.js"></script>
+  <script>
+    function addTodo(){
+      let ul = document.getElementById("todo-list");
+      let text = document.getElementById("input-text").value;
+      let li = document.createElement('li');
+      let checkbox = document.createElement('input');
+      var listsave;
+      if(!checkLocalStorage()){
+        listsave = {"list": []};
+        checkbox.type = "checkbox";
+        checkbox.value = 1;
+        checkbox.name = "todo[]";
+        listsave['list'].push(text);
+        li.appendChild(checkbox)
+        li.appendChild(document.createTextNode(text))
+        ul.appendChild(li)
+        localStorage.setItem("todo", JSON.stringify(listsave));
+      } else {
+        listsave = JSON.parse(localStorage.getItem('todo'));
+        checkbox.type = "checkbox";
+        checkbox.value = 1;
+        checkbox.name = "todo[]";
+        listsave['list'].push(text);
+        li.appendChild(checkbox)
+        li.appendChild(document.createTextNode(text))
+        ul.appendChild(li)
+        localStorage.setItem("todo", JSON.stringify(listsave));
+      }
+    }
+
+    function remTodo(){
+      var list = document.getElementById('todo-list'),
+                 items = Array.prototype.slice.call(list.childNodes),
+                 item;
+      while(item = items.pop()){
+        if(item.firstChild && item.firstChild.checked){
+          list.removeChild(item);
+        }
+      }
+    }
+  </script>
 </body>
 </html>
