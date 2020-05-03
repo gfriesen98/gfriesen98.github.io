@@ -35,11 +35,21 @@
       <a href="https://forum.snahp.it" target="_blank">snahp.it</a> - 
       <a href="https://boards.4chan.org/w/." target="_blank">papes</a> - 
       <a href="https://www.reddit.com/r/unixporn" target="_blank">rice_inspo</a> - 
-      <a href="https://www.base64decode.org/">b64</a>
+      <a href="https://www.base64decode.org/">b64</a> - 
+
+      <a href="https://twitter.com" target="_blank">twitter</a> - 
+      <a href="https://facebook.com" target="_blank">facebook</a> - 
+      <a href="https://youtube.com" target="_blank">youtube</a> - 
+
+      <a href="https://github.com/gfriesen98" target="_blank">github</a> - 
+      <a href="https://material-ui.com/components/material-icons/" target="_blank">material</a> - 
+      <a href="https://wiki.archlinux.org" target="_blank">arch_wiki</a> - 
+      <a href="https://kbdfans.com">kbdfans</a>
+      
     </p>
   </div>
 
-  <div class="container-soc">
+  <!-- <div class="container-soc">
     <p>
       <a href="https://twitter.com" target="_blank">twitter</a> - 
       <a href="https://facebook.com" target="_blank">facebook</a> - 
@@ -54,59 +64,10 @@
       <a href="https://wiki.archlinux.org" target="_blank">arch_wiki</a> - 
       <a href="https://kbdfans.com">kbdfans</a>
     </p>
-  </div>
+  </div> -->
   <br/>
 
-  <!-- <div class="container-list">
-    <input class="form" id="input-text" placeholder="add todo item"/>
-    <button onclick='addTodo()'>add</button>
-    <button onclick="remTodo()">remove</button>
-    <ul id="todo-list"">
-
-    </ul>
-  </div> -->
-
   <script src="js/timedate.js"></script>
-  <script>
-    function addTodo(){
-      let ul = document.getElementById("todo-list");
-      let text = document.getElementById("input-text").value;
-      let li = document.createElement('li');
-      let checkbox = document.createElement('input');
-      var listsave;
-      if(!checkLocalStorage()){
-        listsave = {"list": []};
-        checkbox.type = "checkbox";
-        checkbox.value = 1;
-        checkbox.name = "todo[]";
-        listsave['list'].push(text);
-        li.appendChild(checkbox)
-        li.appendChild(document.createTextNode(text))
-        ul.appendChild(li)
-        localStorage.setItem("todo", JSON.stringify(listsave));
-      } else {
-        listsave = JSON.parse(localStorage.getItem('todo'));
-        checkbox.type = "checkbox";
-        checkbox.value = 1;
-        checkbox.name = "todo[]";
-        listsave['list'].push(text);
-        li.appendChild(checkbox)
-        li.appendChild(document.createTextNode(text))
-        ul.appendChild(li)
-        localStorage.setItem("todo", JSON.stringify(listsave));
-      }
-    }
 
-    function remTodo(){
-      var list = document.getElementById('todo-list'),
-                 items = Array.prototype.slice.call(list.childNodes),
-                 item;
-      while(item = items.pop()){
-        if(item.firstChild && item.firstChild.checked){
-          list.removeChild(item);
-        }
-      }
-    }
-  </script>
 </body>
 </html>
