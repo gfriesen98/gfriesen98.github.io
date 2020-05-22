@@ -6,12 +6,12 @@
   font-size: 14px;
 }
 html {
-  background-color: #0c0a0d;
-  color: #acabb7;
+  background-color: #252120;
+  color: #e7e5e3;
 }
 
 p {
-  color: #acabb7;
+  color: #e7e5e3;
 }
 
 body {
@@ -26,61 +26,61 @@ h3 {
 
 img {
   width: 250px;
-  background-color: #8B7A6E;
+  background-color: #B1BFCA;
   display: inline-block;
-  border: 0px solid #acabb7;
+  border: 0px solid #e7e5e3;
   padding: 30px;
   margin-bottom: 2%;
   margin-top: 0;
 }
 
 .form {
-  background-color: #0c0a0d;
-  color: #928274;
+  background-color: #252120;
+  color: #D3D2D0;
   font-family: "gohufont14";
   font-size: 14px;
   border: none;
-  border-bottom: 2px solid #8B7A6E;
+  border-bottom: 2px solid #B1BFCA;
   width: 302px;
   margin-bottom: 2%;
 }
 
 .form:focus {
-  background-color: #0c0a0d;
-  color: #928274;
+  background-color: #252120;
+  color: #D3D2D0;
   border: none;
-  border-bottom: 5px solid #8B7A6E;
+  border-bottom: 5px solid #B1BFCA;
   width: 302px;
   margin-bottom: 2%;
 }
 
 a {
-  color: #5D575F;
+  color: #D3ABA1;
   text-decoration: none;
   font-family: "gohufont14";
   font-size: 14px;
 }
 
 .container-res {
-  background-color: #8B7A6E;
+  background-color: #B1BFCA;
   display: inline-block;
-  border: 0px solid #acabb7;
+  border: 0px solid #e7e5e3;
   padding: 30px;
   text-align: left;
 }
 
 .container-soc {
-  background-color: #8B7A6E;
+  background-color: #B1BFCA;
   display: inline-block;
-  border: 0px solid #acabb7;
+  border: 0px solid #e7e5e3;
   padding: 30px;
   text-align: left;
 }
 
 .container-other {
-  background-color: #8B7A6E;
+  background-color: #B1BFCA;
   display: inline-block;
-  border: 0px solid #acabb7;
+  border: 0px solid #e7e5e3;
   padding: 30px;
   text-align: left;
 }
@@ -88,7 +88,7 @@ a {
 .weatherdate {
   margin-top: 2%;
   margin-bottom: 2%;
-  background-color: #8B7A6E;
+  background-color: #B1BFCA;
   font-family: "gohufont14";
   font-size: 14px;
   padding: 30px;
@@ -100,8 +100,8 @@ a {
   margin-top: 2%;
 }
 .container-list button {
-  background-color: #8B7A6E;
-  color: #5D575F;
+  background-color: #B1BFCA;
+  color: #D3ABA1;
   border: none;
 }
 
